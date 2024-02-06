@@ -1,19 +1,30 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import { Button, Card, Form, Hero, Input, Mask, Textarea } from "react-daisyui";
+import ThanksModal from "../components/ThanksModal"
+
 import email from "../assets/static-icons/email-icon.png";
 import linkedin from "../assets/static-icons/linkedin-icon.png";
 import gitHubStatic from "../assets/static-icons/github-icon.png";
-import { Button, Card, Form, Hero, Input, Mask, Textarea } from "react-daisyui";
+
 const mailto = "mailto:scaalessandra@icloud.com"
 const linkedinLink = "https://www.linkedin.com/in/alessandra-scarpellini"
 const githubLink = "https://github.com/Aleale81"
 
 const ContactsPage = () => {
   const form = useRef();
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState('')
+  const [visible, setVisible] = useState(false);
+
+  const handleModal = () => {
+    setVisible(false);
+    form.current.reset()
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log('FORM', form.current["user_email"].value, form.current["user_name"].value)
+    setUserName(form.current["user_name"].value)
     emailjs
       .sendForm(
         `${import.meta.env.VITE_SERVICE_ID}`,
@@ -24,6 +35,7 @@ const ContactsPage = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setVisible(true)
         },
         (error) => {
           console.log(error.text);
@@ -32,16 +44,16 @@ const ContactsPage = () => {
   };
 
   return (
-    //lg:text-left
-
+    <>
+    <ThanksModal visible={visible} handleModal={handleModal} userName={userName}/>
     <Hero>
       <Hero.Content className="flex-col align-center lg:flex-row-reverse p-0">
         <div className="text-center ">
-          <h1 className="text-primary text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-500">
+          <h1 className="text-primary text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-400">
             Contact
           </h1>
           <p className="py-6">
-            Feel free to rech out to me using this form or one of the
+          Whether you're reaching out to discuss a project, share an idea, or just say hello, I'd love to hear from you! Feel free to fill out the contact form below, connect with me on LinkedIn for a more professional chat, or shoot me an email if that's more your style. No matter how you choose to reach out, I'm excited to connect and explore the possibilities together. Looking forward to hearing from you soon!
           </p>
           <div className="flex justify-evenly lg:mt-10">
             <a
@@ -85,8 +97,6 @@ const ContactsPage = () => {
                 placeholder="name"
                 className="input-bordered shadow-inner shadow-secondary"
                 name="user_name"
-                value={userName}
-                onChange={(e) => setUserName(e.target.value)}
                 required
               />
               <Form.Label title="Message" />
@@ -107,6 +117,7 @@ const ContactsPage = () => {
         </Card>
       </Hero.Content>
     </Hero>
+    </>
   );
 };
 
