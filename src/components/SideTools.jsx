@@ -17,11 +17,11 @@ const SideTools = () => {
           </div> */}
           <div className="contact-button rounded-full hidden sm:block">
             <Tooltip
-              message="Contact Me!"
+              message="Contact Me"
               position="left"
               color="accent"
             >
-              <Link to={"/contact"}><Mask src={contactIcon} variant="circle" className="w-14 h-14" /></Link>
+              <Link to={"/contact"}><Mask src={contactIcon} variant="circle" className="w-11 h-11" /></Link>
             </Tooltip>
           </div>
           </div>

@@ -7,18 +7,14 @@ import ErrorPage from "./pages/ErrorPage";
 import AboutMePage from "./pages/AboutMePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactsPage from "./pages/ContactsPage";
-import Intro from "./components/Intro";
 import SideTools from "./components/SideTools";
 
 function App() {
-  // const [showIntro, setShowIntro] = useState(true)
-
 
   return (
     <>
-    {/* {showIntro && <Intro /> } */}
-      <div className="grid grid-cols-1 sm:grid-cols-6">
-        <div className="col-span-1 flex justify-center sm:block">
+      <div className="grid grid-cols-1 align-center sm:grid-cols-6">
+        <div className="col-span-1">
           <NavMenu />
         </div>
 
@@ -31,8 +27,8 @@ function App() {
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </div>
-        <div className="col-span-1 h-0 sm:h-screen">
-<SideTools /> 
+        <div className="col-span-1 h-0">
+          <SideTools /> 
         </div>
       </div>
     </>

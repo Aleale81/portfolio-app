@@ -11,38 +11,6 @@
   top: 2rem;
 }
 
-.NavMenu .icons {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#home-icon {
-  background-image: url("../src/assets/icons/home-icon.gif");
-}
-
-#about-icon {
-  background-image: url("../src/assets/icons/about-icon.gif");
-}
-
-#projects-icon {
-  background-image: url("../src/assets/icons/projects-icon.gif");
-}
-
-#contacts-icon {
-  background-image: url("../src/assets/icons/contact-icon.gif");
-}
-
-#app-link {
-  background-image: url("../src/assets/icons/app-link.gif");
-}
-
-.project-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .theme-switch {
   position: fixed;
   top: 2rem;

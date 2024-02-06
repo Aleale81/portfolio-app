@@ -1,49 +1,85 @@
-import { Menu, Tooltip } from "react-daisyui";
+import { Mask, Menu, Tooltip } from "react-daisyui";
 import { NavLink } from "react-router-dom";
+import homeIcon from "../assets/icons/home-icon.gif";
+import aboutIcon from "../assets/icons/about-icon.gif";
+import projectsIcon from "../assets/icons/projects-icon.gif";
+import contactIcon from "../assets/icons/contact-icon.gif";
 
-const isActiveLink = ({isActive}) => (isActive ? "active rounded-box bg-primary" : "") 
+const isActiveLink = ({ isActive }) =>
+  isActive
+    ? "active"
+    : "";
 
 const NavMenu = () => {
   return (
-    <div className="NavMenu mb-5">
-      <Menu
-        className="bg-white shadow-lg shadow-secondary rounded-box sm:grid grid-cols-1"
-        size="lg"
-        horizontal="true"
-      >
-      <NavLink to={"/"} className={isActiveLink}>
-        <Menu.Item id="home-icon" className="icons m-1">
-          <Tooltip message="Home" position="right" color="accent" className="hover:bg-transparent">
-          <div className="p-1 m-2"></div>
+    <Menu
+      className="NavMenu bg-transparent shadow-md shadow-secondary rounded-box sm:grid grid-col-1  mb-5"
+      size="md"
+      horizontal="true"
+    >
+      <Menu.Item>
+        <NavLink to={"/"} className={isActiveLink}>
+          <Tooltip
+            message="Home"
+            position="right"
+            color="accent"
+            className="m-1 hover:bg-transparent"
+          >
+            <Mask src={homeIcon} variant="circle" className="w-11 h-11 block" />
           </Tooltip>
-        </Menu.Item>
         </NavLink>
+      </Menu.Item>
 
+      <Menu.Item>
         <NavLink to={"/about"} className={isActiveLink}>
-        <Menu.Item id="about-icon" className="icons m-1">
-          <Tooltip message="About Me" position="right" color="accent" className="hover:bg-transparent">
-            <div className="p-1 m-2"></div>
+          <Tooltip
+            message="About"
+            position="right"
+            color="accent"
+            className="m-1 hover:bg-transparent"
+          >
+            <Mask
+              src={aboutIcon}
+              variant="circle"
+              className="w-11 h-11 block"
+            />
           </Tooltip>
-        </Menu.Item>
         </NavLink>
+      </Menu.Item>
 
-        <NavLink to={"projects"} className={isActiveLink}>
-        <Menu.Item id="projects-icon" className="icons m-1">
-          <Tooltip message="My Projects" position="right" color="accent" className="hover:bg-transparent">
-          <div className="p-1 m-2"></div>
+      <Menu.Item>
+        <NavLink to={"/projects"} className={isActiveLink}>
+          <Tooltip
+            message="Projects"
+            position="right"
+            color="accent"
+            className="m-1 hover:bg-transparent"
+          >
+            <Mask
+              src={projectsIcon}
+              variant="circle"
+              className="w-11 h-11 block"
+            />
           </Tooltip>
-        </Menu.Item>
         </NavLink>
-
-        <NavLink to={"contact"} className={isActiveLink}>
-        <Menu.Item id="contacts-icon" className="icons m-1">
-          <Tooltip message="Contact Me" position="right" color="accent" className="hover:bg-transparent">
-          <div className="p-1 m-2"></div>
+      </Menu.Item>
+      <Menu.Item>
+        <NavLink to={"/contact"} className={isActiveLink}>
+          <Tooltip
+            message="Contact"
+            position="right"
+            color="accent"
+            className="m-1 hover:bg-transparent"
+          >
+            <Mask
+              src={contactIcon}
+              variant="circle"
+              className="w-11 h-11 block"
+            />
           </Tooltip>
-        </Menu.Item>
         </NavLink>
-      </Menu>
-    </div>
+      </Menu.Item>
+    </Menu>
   );
 };
 
