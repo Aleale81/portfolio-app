@@ -11,7 +11,7 @@ const ProjectsPage = () => {
       <Hero>
         <Hero.Content className="flex-row">
           <div>
-            <h1 className="text-primary text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-500">
+            <h1 className="text-primary text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-400">
               Projects
             </h1>
             <p className="py-6">
@@ -23,7 +23,7 @@ const ProjectsPage = () => {
             </p>
             <div className="flex justify-end">
               <Link to={"/contact"}>
-                <Button color="primary">
+                <Button>
                   Contact Me
                   <Mask
                     src={arrowRx}
@@ -36,7 +36,7 @@ const ProjectsPage = () => {
           </div>
         </Hero.Content>
       </Hero>
-      
+
       {projectsData.map((project) => {
         return (
           <ProjectCard project={project} key={project.id} />
