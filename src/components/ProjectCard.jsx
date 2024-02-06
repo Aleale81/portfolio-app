@@ -14,7 +14,6 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <a href={project.appUrl} target="_blank">
       <Card
         imageFull
         className={`h-80 shadow-secondary mb-6 transition-all duration-500 ease-in-out ${
@@ -27,7 +26,7 @@ const ProjectCard = ({ project }) => {
         <Card.Body className="w-full justify-between">
           <Card.Title className="w-full flex flex-wrap justify-between">
             <h1
-              className={`text-accent font-extrabold ms-2 transition-all duration-500 ease-in-out ${
+              className={`text-white font-extrabold ms-2 transition-all duration-500 ease-in-out ${
                 isShown ? "text-lg" : "text-2xl"
               }`}
             >
@@ -91,7 +90,6 @@ const ProjectCard = ({ project }) => {
           </div>
         </Card.Body>
       </Card>
-    </a>
   );
 };
 
