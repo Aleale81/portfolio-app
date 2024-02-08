@@ -1,0 +1,64 @@
+[
+    {
+        "id": 5,
+        "position": "Ironhack - Teacher Assistant - Web Development Bootcamp",
+        "period": "Nov 2022 - Today",
+        "description": "After completing my own journey as a student, I eagerly stepped into the role of a teacher assistant, excited to share my newfound knowledge and support others on their coding journey. In this role, I've had the privilege of refining my technical skills while also embracing the opportunity to learn from the innovative ideas of my students. From offering guidance on coding techniques to assisting with project organization and troubleshooting, I've enjoyed the dynamic exchange of knowledge in the classroom. One of the most fulfilling aspects of my role has been ensuring that students feel supported and empowered throughout their learning journey. Collaborating closely with teachers and classmates, I've worked to create a vibrant and inclusive learning environment where creativity thrives and collaboration flourishes.",
+        "learnings": ["Troubleshooting", "Debugging", "Coding techniques", "Knowledge exchange", "Student support" ]
+    },
+    {
+        "id": 4,
+        "position": "Ironhack - FullStack - Web Development Bootcamp - Remote",
+        "period": "Sep - Nov 2022",
+        "description": "Transitioning from passion to profession, I undertook a full-stack web development bootcamp, where I immersed myself in a dynamic learning environment. From the foundational elements of HTML and CSS to the dynamic functionality of JavaScript and ReactJS, and NodeJS and Express for backend development. Additionally, I gained hands-on experience building REST APIs with Axios, and mastering MongoDB and Mongoose for database management. Beyond technical skills, I embraced pair programming and Agile methodology, fostering collaboration and adaptability. Moreover, I had the privilege of connecting with a lovely community of peers, each contributing to my growth and enriching my journey. This bootcamp was more than what I was expecting to ignite my passion and equip me to begin my career in web development.",
+        "learnings": [
+            "React",
+            "NodeJs",
+            "Express",
+            "MongoDB",
+            "REST APIs",
+            "Axios",
+            "Pair Programming",
+            "Agile"
+        ]
+    },
+    {
+        "id": 3,
+        "position": "She Codes - Online Coding Workshops",
+        "period": "2021 - 2022",
+        "description": "During my spare time, I delved into the world of web development and coding, starting with the basics of HTML, CSS, and Javascript. As I progressed, I found myself building my first small apps using React and integrating APIs, fueling my growing passion for this dynamic field.",
+        "learnings": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "React",
+            "APIs",
+            "Bootstrap"
+        ]
+    },
+    {
+        "id": 2,
+        "position": "Weekday - Dep. Manager - Amsterdam",
+        "period": "2019 - Aug 2022",
+        "description": "I jumped into new cultural experiences while ensuring things ran smoothly by integrating some of my previous skills, keeping meticulous records, sharing trendy fashion ideas, leading an energetic team, and managing daily store operations with efficiency and secure cash handling.",
+        "learnings": [
+            "Cultural adaptation",
+            "Market understanding",
+            "Strategic planning",
+            "Team management"
+        ]
+    },
+    {
+        "id": 1,
+        "position": "Zara - Dep. Manager - Italy",
+        "period": "2009 - 2018",
+        "description": "I've had the opportunity to work in various stores, where I've managed Visual Merchandise and Product Management, Team Development, Merchandise Handling, and ensured Efficient Operation and a Positive Environment.",
+        "learnings": [
+            "Trend Analysis",
+            "Collaboration",
+            "Strategy",
+            "Efficiency",
+            "Management"
+        ]
+    }
+]
