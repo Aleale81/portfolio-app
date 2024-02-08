@@ -8,12 +8,13 @@ import AboutMePage from "./pages/AboutMePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactsPage from "./pages/ContactsPage";
 import SideTools from "./components/SideTools";
+import FooterLine from "./components/FooterLine";
 
 function App() {
 
   return (
     <>
-      <div className="grid grid-cols-1 align-center sm:grid-cols-6">
+      <div className="grid grid-cols-1 justify-center md:grid-cols-6 sm:gap-4">
         <div className="col-span-1">
           <NavMenu />
         </div>
@@ -26,11 +27,13 @@ function App() {
             <Route path="/contact" element={<ContactsPage />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
+          
         </div>
         <div className="col-span-1 h-0">
           <SideTools /> 
         </div>
       </div>
+      <FooterLine /> 
     </>
   );
 }

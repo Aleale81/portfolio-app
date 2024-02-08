@@ -16,7 +16,7 @@
   top: 2rem;
 }
 
-.contact-button {
+.Footer, .contact-button {
   position: fixed;
   bottom: 2rem;
 }
