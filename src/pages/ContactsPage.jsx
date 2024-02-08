@@ -46,10 +46,10 @@ const ContactsPage = () => {
   return (
     <>
     <ThanksModal visible={visible} handleModal={handleModal} userName={userName}/>
-    <Hero>
+    <Hero className="rounded-lg shadow-md shadow-accent p-6">
       <Hero.Content className="flex-col align-center lg:flex-row-reverse p-0">
-        <div className="text-center ">
-          <h1 className="text-primary text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-blue-400">
+        <div>
+          <h1 className="text-accent text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-primary">
             Contact
           </h1>
           <p className="py-6">
@@ -80,14 +80,14 @@ const ContactsPage = () => {
             </a>
           </div>
         </div>
-        <Card className="flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <Card className="flex-shrink-0 w-full max-w-sm bg-base-100">
           <Card.Body>
             <Form ref={form} onSubmit={sendEmail}>
               <Form.Label title="Email" />
               <Input
                 type="email"
                 placeholder="email"
-                className="input-bordered shadow-inner shadow-secondary"
+                className="input-bordered shadow-inner shadow-accent"
                 name="user_email"
                 required
               />
@@ -95,7 +95,7 @@ const ContactsPage = () => {
               <Input
                 type="text"
                 placeholder="name"
-                className="input-bordered shadow-inner shadow-secondary"
+                className="input-bordered shadow-inner shadow-accent"
                 name="user_name"
                 required
               />
@@ -103,12 +103,12 @@ const ContactsPage = () => {
               <Textarea
                 type="text"
                 placeholder="message"
-                className="shadow-inner shadow-secondary"
+                className="shadow-inner shadow-accent"
                 name="message"
                 required
               />
               <div className="mt-6">
-                <Button type="submit" color="primary">
+                <Button type="submit" color="primary" glass variant="outline">
                   Send
                 </Button>
               </div>

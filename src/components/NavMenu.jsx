@@ -7,13 +7,13 @@ import contactIcon from "../assets/icons/contact-icon.gif";
 
 const isActiveLink = ({ isActive }) =>
   isActive
-    ? "active"
-    : "";
+    ? "active p-1"
+    : "p-1";
 
 const NavMenu = () => {
   return (
     <Menu
-      className="NavMenu bg-transparent shadow-md shadow-secondary rounded-box sm:grid grid-col-1  mb-5"
+      className="NavMenu bg-transparent shadow-md shadow-accent rounded-box  mb-5 md:grid grid-col-1 "
       size="md"
       horizontal="true"
     >
@@ -25,7 +25,7 @@ const NavMenu = () => {
             color="accent"
             className="m-1 hover:bg-transparent"
           >
-            <Mask src={homeIcon} variant="circle" className="w-11 h-11 block" />
+            <Mask src={homeIcon} variant="circle" className="w-8 h-8 block sm:w-11 sm:h-11" />
           </Tooltip>
         </NavLink>
       </Menu.Item>
@@ -41,7 +41,7 @@ const NavMenu = () => {
             <Mask
               src={aboutIcon}
               variant="circle"
-              className="w-11 h-11 block"
+              className="w-8 h-8 block sm:w-11 sm:h-11"
             />
           </Tooltip>
         </NavLink>
@@ -58,7 +58,7 @@ const NavMenu = () => {
             <Mask
               src={projectsIcon}
               variant="circle"
-              className="w-11 h-11 block"
+              className="w-8 h-8 block sm:w-11 sm:h-11"
             />
           </Tooltip>
         </NavLink>
@@ -74,7 +74,7 @@ const NavMenu = () => {
             <Mask
               src={contactIcon}
               variant="circle"
-              className="w-11 h-11 block"
+              className="w-8 h-8 block sm:w-11 sm:h-11"
             />
           </Tooltip>
         </NavLink>
