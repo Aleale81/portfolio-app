@@ -4,19 +4,3 @@
   padding: 2rem;
   text-align: center;
 }
-
-.NavMenu {
-  max-width: max-content;
-  position: sticky;
-  top: 2rem;
-}
-
-.theme-switch {
-  position: fixed;
-  top: 2rem;
-}
-
-.Footer, .contact-button {
-  position: fixed;
-  bottom: 2rem;
-}

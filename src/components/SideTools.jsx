@@ -6,7 +6,7 @@ import contactIcon from "../assets/icons/talking-icon.gif";
 const SideTools = () => {
     return (
         <div className="flex flex-col justify-between items-end ">
-        {/* <div className="theme-switch rounded-full hidden sm:block">
+        {/* <div className="fixed bottom-8 rounded-full hidden sm:block">
             <Tooltip
               message="Switch theme"
               position="left"
@@ -15,7 +15,7 @@ const SideTools = () => {
               <Mask src={} variant="circle" className="w-14 h-14" />
             </Tooltip>
           </div> */}
-          <div className="contact-button rounded-full hidden sm:block">
+          <div className="fixed bottom-8 rounded-full hidden md:block">
             <Tooltip
               message="Contact Me"
               position="left"

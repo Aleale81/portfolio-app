@@ -13,7 +13,7 @@ const isActiveLink = ({ isActive }) =>
 const NavMenu = () => {
   return (
     <Menu
-      className="NavMenu bg-transparent shadow-md shadow-accent rounded-box  mb-5 md:grid grid-col-1 "
+      className="top-8 bg-transparent shadow-md shadow-accent rounded-box mb-5 md:grid grid-col-1 md:max-w-max md:fixed"
       size="md"
       horizontal="true"
     >
