@@ -8,7 +8,7 @@ import AboutMePage from "./pages/AboutMePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactsPage from "./pages/ContactsPage";
 import SideTools from "./components/SideTools";
-import FooterLine from "./components/FooterLine";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
           <SideTools /> 
         </div>
       </div>
-      <FooterLine /> 
+      <Footer /> 
     </>
   );
 }
