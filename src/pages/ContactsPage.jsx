@@ -6,7 +6,9 @@ import ThanksModal from "../components/ThanksModal"
 import email from "../assets/static-icons/email-icon.png";
 import linkedin from "../assets/static-icons/linkedin-icon.png";
 import gitHubStatic from "../assets/static-icons/github-icon.png";
+import cvIcon from "../assets/static-icons/cv-icon.png"
 
+import cvPdf from "../assets/resume/A_Scarpellini.pdf"
 const mailto = "mailto:scaalessandra@icloud.com"
 const linkedinLink = "https://www.linkedin.com/in/alessandra-scarpellini"
 const githubLink = "https://github.com/Aleale81"
@@ -58,25 +60,35 @@ const ContactsPage = () => {
           <div className="flex justify-evenly lg:mt-10">
             <a
               href={mailto}
-              target="_blank"
+              rel='noopener noreferrer'
               className="inline-block"
             >
               <Mask src={email} className=" w-9 h-9" />
             </a>
             <a
               href={linkedinLink}
+              rel='noopener noreferrer'
               target="_blank"
               className="inline-block"
             >
               <Mask src={linkedin} className=" w-9 h-9" />
             </a>
-
             <a
               href={githubLink}
+              rel='noopener noreferrer'
               target="_blank"
               className="inline-block"
             >
               <Mask src={gitHubStatic} className=" w-9 h-9" />
+            </a>
+            <a
+              href={cvPdf}
+              target="_blank"
+              rel='noopener noreferrer'
+              className="inline-block"
+              // download="A.Scarpellini-Resume.pdf"
+            >
+              <Mask src={cvIcon} className=" w-9 h-9" />
             </a>
           </div>
         </div>
