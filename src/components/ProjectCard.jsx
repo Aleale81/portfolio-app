@@ -34,7 +34,7 @@ const ProjectCard = ({ project }) => {
           </h1>{" "}
           <span>
             {project.appUrl && (
-              <a href={project.appUrl} target="_blank" className="inline-block">
+              <a href={project.appUrl} rel='noopener noreferrer' target="_blank" className="inline-block">
                 <Tooltip message="Visit App" position="top" color="accent">
                   <Mask
                     src={appLinkIcon}
@@ -46,7 +46,7 @@ const ProjectCard = ({ project }) => {
                 </Tooltip>
               </a>
             )}
-            <a href={project.gitUrl} target="_blank" className="inline-block">
+            <a href={project.gitUrl} rel='noopener noreferrer' target="_blank" className="inline-block">
               <Tooltip
                 message="Github Repository"
                 position="top"
