@@ -6,11 +6,14 @@ import arrowRx from "../assets/icons/arrowRx-icon.gif";
 const ErrorPage = () => {
   return (
     <div className="flex flex-col flex-wrap justify-center content-center">
-        <img
-          src={notFoundIcon}
-          alt="Sorry, page not found :("
-          className="w-3/5"
-        />
+      <h1 className="mb-3 text-accent text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-primary">
+        Ooops....
+      </h1>
+      <img
+        src={notFoundIcon}
+        alt="Sorry, page not found :("
+        className="w-3/5"
+      />
 
       <div className="justify-end mt-5">
         <Link to={"/"}>
