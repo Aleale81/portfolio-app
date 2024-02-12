@@ -1,13 +1,13 @@
-import { Button, Hero, Mask } from "react-daisyui";
-import homeImage from "../assets/images/home-page-img.jpeg";
-import arrowRx from "../assets/icons/arrowRx-icon.gif";
+import { Button, Carousel, Hero, Mask } from "react-daisyui";
 import { Link } from "react-router-dom";
+import meImage from "../assets/images/me.jpg";
+import arrowRx from "../assets/icons/arrowRx-icon.gif";
 
 const HomePage = () => {
   return (
     <Hero className="rounded-lg shadow-md shadow-accent">
       <Hero.Content className="flex-col lg:flex-row">
-        <img src={homeImage} className="max-w-sm rounded-lg hidden md:block" />
+        <img src={meImage} className="max-w-sm h-52 rounded-lg md:block md:h-full" />
         <div>
           <h1 className="text-5xl font-bold">
             Hello there, I'm{" "}

@@ -2,7 +2,7 @@ import experiences from "../assets/data/experiences.json";
 import { Button, Hero, Mask } from "react-daisyui";
 import { Link } from "react-router-dom";
 import Experience from "../components/Experience";
-import meImage from "../assets/images/me.jpg";
+import homeImage from "../assets/images/home-page-img.jpeg";
 import arrowRx from "../assets/icons/arrowRx-icon.gif";
 
 const AboutMePage = () => {
@@ -10,7 +10,7 @@ const AboutMePage = () => {
     <>
       <Hero className="rounded-lg shadow-md shadow-accent">
         <Hero.Content className="flex-col lg:flex-row">
-          <img src={meImage} className="max-w-xs rounded-lg h-52 sm:block" />
+          <img src={homeImage} className="max-w-xs hidden rounded-lg h-52 sm:block" />
           <div>
             <h1 className="text-accent text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-primary">
               About Me
