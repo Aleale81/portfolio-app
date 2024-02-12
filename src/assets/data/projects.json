@@ -6,7 +6,8 @@
     "gitUrl": "https://github.com/Class-Handler",
     "appUrl": null,
     "description": "Admins can create and manage cohorts, track pairs for class activities, and generate random pairs with our intuitive platform. Additionally, they can store student preferences for project partners. Students login with unique keys to submit their preferences for specific projects",
-    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1692468383/zapqz3i93yfwjhikot7j.jpg",
+    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558944/docs/class-handler-img_d3sywg.png",
+    "gif": "",
     "tech": ["ReactJS", "Express", "NodeJs", "MongoDB", "React-Bootstrap", "REST api", "Drag & Drop"]
   },
   {
@@ -15,7 +16,8 @@
     "gitUrl": "https://github.com/italian-iranian-connection",
     "appUrl": "https://logstation.netlify.app",
     "description": "Log Station is a platform for web developers who want to: show projects they developed, share projects they are working on, present ideas of projects they'd like to develop, and contact other developers they'd like to collaborate with.",
-    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1692468383/zapqz3i93yfwjhikot7j.jpg",
+    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558878/docs/log-station-img_w7hld3.png",
+    "gif": "",
     "tech": ["ReactJS", "Express", "NodeJs", "MongoDB", "Bootstrap", "REST api", "soket.io"]
   },
   {
@@ -24,7 +26,8 @@
     "gitUrl": "https://github.com/Ironic-event-creator/music-event-platform-project2",
     "appUrl": "https://music-event-platform.adaptable.app/",
     "description": "SSR Express application that display information about live music events in Istanbul. A registered user can create, update and delete. Or simply leave a comment for the events already posted.",
-    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1692467448/gtzhkinsndobtk7ldgov.jpg",
+    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558911/docs/music-event-img_tojuai.png",
+    "gif": "",
     "tech": ["Express", "NodeJs", "MongoDB", "Handlebars", "Bootstrap"]
   },
   {
@@ -33,7 +36,8 @@
     "gitUrl": "https://github.com/Aleale81/Game-project1",
     "appUrl": "https://aleale81.github.io/Game-project1/",
     "description": "A 'shoot 'em all' game built in vanilla javascript, html and css. A perfect way to improve programmig fundamental skills like OOP, DOM manipulation, loops and more...",
-    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1706470966/docs/shoot-the-pigeon_l1g46n.gif",
+    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558367/docs/game-img_bpwqzl.png",
+    "gif": "https://res.cloudinary.com/daualsgyz/image/upload/v1706470966/docs/shoot-the-pigeon_l1g46n.gif",
     "tech": ["JS", "HTML", "CSS", "OOP"]
   },
   {
@@ -42,9 +46,8 @@
     "gitUrl": "https://github.com/Aleale81/dictionary-project",
     "appUrl": "https://eager-heisenberg-9fdca9.netlify.app/",
     "description": "The second final project for the SheCodes React Workshop. This app uses data from two different APIs, the Free Dictionary to show the definition of the word you are looking for and the Pexels ones to display pictures related to the word searched",
-    "image": [
-      ""
-    ],
+    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558773/dictionary-img_o6mb1e.png",
+    "gif": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558773/dictionary-img_o6mb1e.png",
     "tech": ["ReactJS", "JS", "Bootstrap", "APIs"]
   },
   {
@@ -53,7 +56,8 @@
     "gitUrl": "https://github.com/Aleale81/project-weather-app",
     "appUrl": "https://alessandra-weather-app.netlify.app/",
     "description": "One of the final projects of the SheCodes React Workshop. This React app shows live data from OpenWeather API and displays nice animated icons using React Animated Weather customizable component.",
-    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1706470975/docs/weather-app_v2tql5.gif",
+    "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707561843/docs/weather-app-img_hfd54r.png",
+    "gif": "https://res.cloudinary.com/daualsgyz/image/upload/v1706470975/docs/weather-app_v2tql5.gif",
     "tech": ["ReactJS", "JS", "Bootstrap", "API", "npm PKGs"]
   }
 ]
