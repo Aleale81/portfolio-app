@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Button, Card, Mask, Tooltip } from "react-daisyui";
+import { Button, Card, Divider, Mask, Tooltip } from "react-daisyui";
 import appLinkIcon from "../assets/icons/app-link.gif";
 import githubIcon from "../assets/icons/github-icon.gif";
-
+import wipIcon from "../assets/static-icons/work-in-progress-icon.png";
 const ProjectCard = ({ project }) => {
   const [isShown, setIsShown] = useState(true);
 
@@ -15,38 +15,45 @@ const ProjectCard = ({ project }) => {
 
   return (
     <Card
-      imageFull
-      className={`shadow-accent m-4 transition-all duration-500 ease-in-out ${
+      className={`shadow-accent transition-all duration-500 ease-in-out ${
         isShown ? "shadow-md " : "shadow-lg"
-      } md:h-80 md:12`}
+      } `}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Card.Image src={project.image} alt={project.projectName} />
-      <Card.Body className="p-1 w-full justify-between md:p-8">
+      <Card.Image src={isShown ? project.image : project.gif} alt={project.projectName} className="h-52"/>
+      <Card.Body>
         <Card.Title className="w-full flex flex-wrap justify-between">
-          <h1
-            className={`text-secondary font-extrabold ms-2 transition-all duration-500 ease-in-out ${
-              isShown ? "text-lg" : "text-2xl"
-            }`}
-          >
+          <h1 className="text-secondary text-xl font-extrabold">
             {project.projectName}
           </h1>{" "}
           <span>
-            {project.appUrl && (
-              <a href={project.appUrl} rel='noopener noreferrer' target="_blank" className="inline-block">
+            {project.appUrl ? (
+              <a
+                href={project.appUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="inline-block"
+              >
                 <Tooltip message="Visit App" position="top" color="accent">
                   <Mask
                     src={appLinkIcon}
-                    className={`me-2 transition-all duration-500 ease-in-out ${
-                      isShown ? "w-9 h-9" : "w-11 h-11"
-                    }`}
+                    className="me-2 w-9 h-9"
                     variant="circle"
                   />
                 </Tooltip>
               </a>
+            ) : (
+              <div className="inline-block">
+                <Mask src={wipIcon} className="me-2 w-9 h-9" />
+              </div>
             )}
-            <a href={project.gitUrl} rel='noopener noreferrer' target="_blank" className="inline-block">
+            <a
+              href={project.gitUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="inline-block"
+            >
               <Tooltip
                 message="Github Repository"
                 position="top"
@@ -54,42 +61,34 @@ const ProjectCard = ({ project }) => {
               >
                 <Mask
                   src={githubIcon}
-                  className={`me-2 transition-all duration-500 ease-in-out ${
-                    isShown ? "w-9 h-9" : "w-11 h-11"
-                  }`}
+                  className="me-2 w-9 h-9"
                   variant="circle"
                 />
               </Tooltip>
             </a>
           </span>
         </Card.Title>
-        <div
-          className={`w-full justify-evenly transition-all duration-700 ease-in-out ${
-            isShown ? "" : "opacity-0"
-          }`}
-        >
-          <Card.Actions>
-            <p className="text-sm p-8">{project.description}</p>
-          </Card.Actions>
 
-          <Card.Actions>
-            {project.tech.map((el, index) => {
-              return (
-                <Button
-                  key={index}
-                  className="m-1 cursor-default"
-                  color="primary"
-                  size="xs"
-                  glass
-                  variant="outline"
-                  active="true"
-                >
-                  {el}
-                </Button>
-              );
-            })}
-          </Card.Actions>
-        </div>
+        <Divider color="primary"></Divider>
+        <p className="text-md p-1">{project.description}</p>
+
+        <Card.Actions>
+          {project.tech.map((el, index) => {
+            return (
+              <Button
+                key={index}
+                className="m-1 cursor-default"
+                color="primary"
+                size="xs"
+                glass
+                variant="outline"
+                active="true"
+              >
+                {el}
+              </Button>
+            );
+          })}
+        </Card.Actions>
       </Card.Body>
     </Card>
   );
