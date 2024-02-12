@@ -9,11 +9,11 @@ const Experience = ({ experience }) => {
 
   return (
     <ChatBubble end={bubblePosition(experience.id)} className="m-4 md:mt-10 md:mb-10">
-      <ChatBubble.Header className="text-secondary">
+      <ChatBubble.Header className="text-secondary text-lg">
         <i className="opacity-70">{experience.period} - </i> {experience.position}
         <br />
       </ChatBubble.Header>
-      <ChatBubble.Message className="shadow-md shadow-accent m-3">
+      <ChatBubble.Message className="text-24 shadow-md shadow-accent m-3">
         {experience.description}
       </ChatBubble.Message>
       <ChatBubble.Footer className="opacity-1">
