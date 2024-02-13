@@ -48,7 +48,7 @@ const ContactsPage = () => {
   return (
     <>
     <ThanksModal visible={visible} handleModal={handleModal} userName={userName}/>
-    <Hero className="rounded-lg shadow-md shadow-accent p-6">
+    <Hero className="rounded-lg shadow-md shadow-accent p-2 sm:p-6">
       <Hero.Content className="flex-col align-center lg:flex-row-reverse p-0">
         <div>
           <h1 className="text-accent text-5xl font-bold drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-primary">
@@ -63,7 +63,7 @@ const ContactsPage = () => {
               rel='noopener noreferrer'
               className="inline-block"
             >
-              <Mask src={email} className=" w-9 h-9" />
+              <Mask src={email} className="w-9 h-9" />
             </a>
             <a
               href={linkedinLink}
@@ -71,7 +71,7 @@ const ContactsPage = () => {
               target="_blank"
               className="inline-block"
             >
-              <Mask src={linkedin} className=" w-9 h-9" />
+              <Mask src={linkedin} className="w-9 h-9" />
             </a>
             <a
               href={githubLink}
@@ -79,7 +79,7 @@ const ContactsPage = () => {
               target="_blank"
               className="inline-block"
             >
-              <Mask src={gitHubStatic} className=" w-9 h-9" />
+              <Mask src={gitHubStatic} className="w-9 h-9" />
             </a>
             <a
               href={cvPdf}
