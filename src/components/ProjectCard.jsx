@@ -3,6 +3,7 @@ import { Button, Card, Divider, Mask, Tooltip } from "react-daisyui";
 import appLinkIcon from "../assets/icons/app-link.gif";
 import githubIcon from "../assets/icons/github-icon.gif";
 import wipIcon from "../assets/static-icons/work-in-progress-icon.png";
+
 const ProjectCard = ({ project }) => {
   const [isShown, setIsShown] = useState(true);
 
@@ -71,11 +72,11 @@ const ProjectCard = ({ project }) => {
 
         <Divider color="primary"></Divider>
         <p className="text-md p-1">{project.description}</p>
-
+{/* 
         <Card.Actions>
-          {project.tech.map((el, index) => {
+          {!project.techIcons && project.tech.map((el, index) => {
             return (
-              <Button
+                              <Button
                 key={index}
                 className="m-1 cursor-default"
                 color="primary"
@@ -88,6 +89,18 @@ const ProjectCard = ({ project }) => {
               </Button>
             );
           })}
+        </Card.Actions> */}
+        <Card.Actions>
+        
+        {project.techIcons && 
+        project.techIcons.map((icon, index) => {
+          return (
+            <div key={index} className="inline-block">
+                <Mask src={`../tech-icon/${icon}`} className="w-11 h-11" />
+              </div>
+          )
+        })}
+        
         </Card.Actions>
       </Card.Body>
     </Card>
