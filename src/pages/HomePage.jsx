@@ -1,4 +1,4 @@
-import { Button, Carousel, Hero, Mask } from "react-daisyui";
+import { Button, Hero, Mask } from "react-daisyui";
 import { Link } from "react-router-dom";
 import meImage from "../assets/images/me.jpg";
 import arrowRx from "../assets/icons/arrowRx-icon.gif";
@@ -6,10 +6,10 @@ import arrowRx from "../assets/icons/arrowRx-icon.gif";
 const HomePage = () => {
   return (
     <Hero className="rounded-lg shadow-md shadow-accent">
-      <Hero.Content className="flex-col lg:flex-row">
-        <img src={meImage} className="max-w-sm h-52 rounded-lg md:block md:h-full" />
+      <Hero.Content className="flex-col md:flex-row">
+        <img src={meImage} className="max-w-sm h-52 rounded-lg lg:block lg:h-full" />
         <div>
-          <h1 className="text-5xl font-bold">
+          <h1 className="text-5xl font-bold ">
             Hello there, I'm{" "}
             <span className="text-accent drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-primary">
               Alessandra
