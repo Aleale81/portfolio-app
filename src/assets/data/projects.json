@@ -7,7 +7,7 @@
     "appUrl": null,
     "description": "Admins can create and manage cohorts, track pairs for class activities, and generate random pairs with our intuitive platform. Additionally, they can store student preferences for project partners. Students login with unique keys to submit their preferences for specific projects",
     "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558944/docs/class-handler-img_d3sywg.png",
-    "gif": "",
+    "gif": "https://res.cloudinary.com/daualsgyz/image/upload/v1707853299/docs/class-handler_ackvzi.gif",
     "tech": ["ReactJS", "Express", "NodeJs", "MongoDB", "React-Bootstrap", "REST api", "Drag & Drop"],
     "techIcons":["react.png", "nodejs.png", "express.png", "mongodb.png", "rest-api.png", "drag&drop.png", "npm-packages.png", "react-bootstrap.png"]
 
@@ -19,7 +19,7 @@
     "appUrl": "https://logstation.netlify.app",
     "description": "Log Station is a platform for web developers who want to: show projects they developed, share projects they are working on, present ideas of projects they'd like to develop, and contact other developers they'd like to collaborate with.",
     "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558878/docs/log-station-img_w7hld3.png",
-    "gif": "",
+    "gif": "https://res.cloudinary.com/daualsgyz/image/upload/v1707853379/docs/Log-Station_hjnrtj.gif",
     "tech": ["ReactJS", "Express", "NodeJs", "MongoDB", "Bootstrap", "REST api", "soket.io"],
     "techIcons":["react.png", "nodejs.png", "express.png", "mongodb.png", "rest-api.png", "socketIO.png", "npm-packages.png", "bootstrap.png", "responsive-web-design.png"]
 
@@ -31,7 +31,7 @@
     "appUrl": "https://music-event-platform.adaptable.app/",
     "description": "SSR Express application that display information about live music events in Istanbul. A registered user can create, update and delete. Or simply leave a comment for the events already posted.",
     "image": "https://res.cloudinary.com/daualsgyz/image/upload/v1707558911/docs/music-event-img_tojuai.png",
-    "gif": "",
+    "gif": "https://res.cloudinary.com/daualsgyz/image/upload/v1707853347/docs/music-event_noc3s7.gif",
     "tech": ["Express", "NodeJs", "MongoDB", "Handlebars", "Bootstrap"],
     "techIcons":["nodejs.png", "express.png", "mongodb.png", "handlebars.png", "rest-api.png", "npm-packages.png", "bootstrap.png", "responsive-web-design.png"]
   },
