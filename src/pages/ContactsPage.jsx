@@ -25,7 +25,7 @@ const ContactsPage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log('FORM', form.current["user_email"].value, form.current["user_name"].value)
+    
     setUserName(form.current["user_name"].value)
     emailjs
       .sendForm(
