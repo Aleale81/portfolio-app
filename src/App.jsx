@@ -14,12 +14,12 @@ function App() {
 
   return (
     <>
-      <div className="grid grid-cols-1 justify-center md:grid-cols-6 sm:gap-4">
+      <div className="grid grid-cols-1 justify-center md:grid-cols-7 sm:gap-4">
         <div className="col-span-1">
           <NavMenu />
         </div>
 
-        <div className="col-span-4">
+        <div className="col-span-5">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutMePage />} />
